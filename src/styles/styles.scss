@@ -1,6 +1,6 @@
 @import './settings.scss';
 @import './reset.scss';
-@import './PageContent/index.scss';
+// @import './PageContent/index.scss';
 
 body {
   background: $bodyBackground;
@@ -26,69 +26,6 @@ body {
   position: relative;
 }
 
-.text-page {
-  font-family: $textFont;
-  position: relative;
-
-  text-align: center; 
-
-  &::before {
-      background: url('../../public/assets/images/panels/painted-leaves.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
-      content: ' ';
-      display: flex;
-      position: absolute;
-      top: 0;
-
-      z-index: -1;
-      filter: grayscale(0.45);
-
-
-  }
-
-
-     p {
-      margin: 1rem auto 0rem auto;
-     }
-
-
-    @media all and (min-width: 920px) {
-      height: 1080px;
-    }
-}
-
-.textPageTextContainer {
-/*     background: #b2b59aee; Make transparent??? */
-    box-shadow: 0px 0px 50px #222;
-    border-radius: 5px;
-
-    background-color: #b2b59aee;
-background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-
-}
-
-
-.imageContainer {
-  box-shadow: 0px 0px 10px #222
-}
-
-
-
-.toc-marker {
-  position: absolute;
-  top: -200px;
-
-
-  .venueContainer & {
-    top: -0px;
-  }
-}
 
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
